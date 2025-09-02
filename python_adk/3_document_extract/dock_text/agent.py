@@ -17,7 +17,7 @@ def dock_text_tool(file_path: str) -> dict:
     except Exception as e:
         return {"error": str(e)}
 
-    # Step 2: Define metadata fields and extraction patterns
+    
     metadata_patterns = {
         "agreement_date": r'\b\d{2}/\d{2}/\d{4}\b',  # Dates in DD/MM/YYYY
         "expiry_date": r'Expiry Date[:\s]+(\d{2}/\d{2}/\d{4})',
