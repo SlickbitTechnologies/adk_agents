@@ -24,10 +24,10 @@ def extract_text_from_image(image_path:str) ->str:
    
     return prompt
 
-# root_agent = Agent(
-#     name="agent_text_extract",
-#     description="Extract text from images",
-#     model="gemini-2.0-flash",
-#     instruction="Extract and clean text from the image and return only the cleaned text.",
-#     tools=[extract_text_from_image],    
-# )
+root_agent = Agent(
+    name="agent_text_extract",
+    description="Extract text from images",
+    model="gemini-2.0-flash",
+    instruction="Extract and clean text from the image and return only the cleaned text.",
+    tools=[extract_text_from_image],    
+)

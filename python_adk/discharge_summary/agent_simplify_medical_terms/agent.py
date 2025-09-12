@@ -16,10 +16,10 @@ def simplify_medical_terms(discharge_summary: str) -> str:
     """
     return prompt
 
-# root_agent = Agent(
-#     name="agent_simplify_medical_terms",
-#     description="Simplify discharge summary for patient understanding",
-#     model="gemini-2.0-flash",
-#     instruction="Simplify medical terms and return patient-friendly summary headings and subheadings.",
-#     tools=[simplify_medical_terms],
-# )
+root_agent = Agent(
+    name="agent_simplify_medical_terms",
+    description="Simplify discharge summary for patient understanding",
+    model="gemini-2.0-flash",
+    instruction="Simplify medical terms and return patient-friendly summary headings and subheadings.",
+    tools=[simplify_medical_terms],
+)

@@ -23,10 +23,10 @@ def generate_discharge_summary(extracted_text: str) -> str:
     """
     return prompt
 
-# root_agent = Agent(
-#     name="agent_summary_generation",
-#     description="Generate structured discharge summary from medical text",
-#     model="gemini-2.0-flash",
-#     instruction="Generate a discharge summary in structured JSON format.",
-#     tools=[generate_discharge_summary],
-# )
+root_agent = Agent(
+    name="agent_summary_generation",
+    description="Generate structured discharge summary from medical text",
+    model="gemini-2.0-flash",
+    instruction="Generate a discharge summary in structured JSON format.",
+    tools=[generate_discharge_summary],
+)
